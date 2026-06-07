@@ -39,7 +39,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: ['*', '.js', '.jsx'],
   },
   devServer: {
     historyApiFallback: true,
@@ -50,4 +50,4 @@ module.exports = {
       filename: './index.html',
     }),
   ],
-};
+}

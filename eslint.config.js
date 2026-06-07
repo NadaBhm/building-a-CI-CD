@@ -3,7 +3,21 @@ const react = require('eslint-plugin-react')
 const jest = require('eslint-plugin-jest')
 const globals = require('globals')
 
+import globals from 'globals'
+
+export default [
+  {
+    files: ['**/*.js'],
+    languageOptions: {
+      sourceType: 'commonjs',
+      globals: { ...globals.node },
+      ecmaVersion: 'latest',
+    },
+  },
+]
+
 module.exports = [
+  
   {
     ignores: [
       'webpack.config.js',
