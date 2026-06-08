@@ -6,11 +6,12 @@ const globals = require('globals')
 module.exports = [
   {
     ignores: [
-      'webpack.config.js',
-      'eslint.config.js',
-      '.eslintrc.js',
-      'node_modules/**',
-      'dist/**'
+    'webpack.config.js',
+    'eslint.config.js',
+    '.eslintrc.js',
+    'playwright.config.js',  // add this
+    'node_modules/**',
+    'dist/**'
     ]
   },
   js.configs.recommended,
